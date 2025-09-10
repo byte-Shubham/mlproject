@@ -96,7 +96,7 @@ Can we predict a student’s math score accurately using other exam scores and d
 
 | Model             | R² Score |
 |------------------|----------|
-| Linear Regression | ✅ *Best* (Highest R² Score) |
+| Linear Regression | ✅ 0.82 (Best) |
 
 ---
 
