@@ -124,13 +124,91 @@ A simple web interface is built using Flask where users can input values and get
 
 ---
 
-### ▶️ How to Run Locally
+## ▶️ How to Run Locally
 
+Follow these steps to set up and run the project on your local machine:
+
+### 1️⃣ Prerequisites
+Make sure you have installed:
+- [Python 3.10+](https://www.python.org/downloads/)  
+- [Git](https://git-scm.com/downloads)  
+- (Optional but recommended) [VS Code](https://code.visualstudio.com/)  
+
+Check installation:
+```bash
+python --version
+git --version
+```
+
+---
+
+### 2️⃣ Clone the Repository
 ```bash
 git clone https://github.com/byte-Shubham/mlproject.git
 cd mlproject
+```
+
+---
+
+### 3️⃣ Create and Activate Virtual Environment
+
+#### On **Windows**:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+#### On **Mac/Linux**:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+(You should see `(venv)` in your terminal once it’s activated.)
+
+---
+
+### 4️⃣ Install Dependencies
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
+```
+
+---
+
+### 5️⃣ Run the Flask Application
+```bash
 python app.py
+```
+
+If successful, you’ll see something like:
+```
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+
+Now open your browser and go to 👉 [http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+---
+
+### 6️⃣ Using the App
+- Homepage → `index.html`  
+- Prediction Form → `home.html`  
+- Enter details (gender, education, lunch type, test prep, scores) → Get **predicted math score**  
+
+---
+
+### 7️⃣ Folder Structure Overview
+```
+mlproject/
+├── app.py                # Flask entry point
+├── requirements.txt      # Dependencies
+├── templates/            # HTML templates (index & home)
+├── src/mlproject/        # ML pipeline code
+├── artifacts/            # Saved model & preprocessor
+├── notebook/             # Jupyter notebooks for EDA & training
+```
+
+---
 
 
 MLFLOW_TRACKING_URI=https://dagshub.com/byte-Shubham/mlproject.mlflow \
